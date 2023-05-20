@@ -1,0 +1,67 @@
+body{
+    background-image: linear-gradient(red, blue);
+}
+
+.gif{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    left: 436px;
+    top: 100px;
+    
+}
+
+.box{
+    width: 512px;
+    height: 50px;
+    font-size: 35px;
+    color: aquamarine;
+    position: absolute;
+    background-color: orchid;
+    border: solid 4px yellow;
+    text-align: center;
+    left: 28%;
+    top: 0%;  
+    margin: 0px;
+}
+
+.emojiA{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
+
+.emojiB{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 100%;
+    top: 20%;
+}
+
+.emojiC{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 0%;
+    top: 80%;
+}
+
+.emojiD{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 100%;
+    top: 80%;
+}
+
+.video{
+    width: 640px;
+    height: 360px;
+    position: absolute;
+    left: 18%;
+    top: 30%;
+    border: dashed 4px yellow;
+}
