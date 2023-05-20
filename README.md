@@ -1,2 +1,17 @@
-# JesusOliveto.github.io
-tutorial detallado de como hacer leakear a un Radiant Halo
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aguante Tool</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="gif">
+            <div class="box">Como hacer leakear Radiant Halo</div>
+            <img  class="emojiA" src="extras\Sprite-0003.gif" alt="animated gif">
+            <img  class="emojiB" src="extras\Sprite-0003.gif" alt="animated gif">
+            <img  class="emojiC" src="extras\Sprite-0003.gif" alt="animated gif">
+            <img  class="emojiD" src="extras\Sprite-0003.gif" alt="animated gif">
+            <video class="video" controls src="extras\1i7bx-b9ftp.mp4" poster="extras\1793195628_preview_20210720140548_2.jpg"></video>
+        </div>
+    </body>    
+</html>
