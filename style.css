@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(#489843, #ea7152, #c8912c, #b1b3b2, #76323d);
 }
 
 .gif{
@@ -14,11 +14,12 @@ body{
 .box{
     width: 512px;
     height: 50px;
-    font-size: 35px;
-    color: aquamarine;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0009ff;
     position: absolute;
-    background-color: orchid;
-    border: solid 4px yellow;
+    background-color: magenta;
+    border: solid 4px #e4ff00;
     text-align: center;
     left: 28%;
     top: 0%;  
@@ -63,5 +64,5 @@ body{
     position: absolute;
     left: 18%;
     top: 30%;
-    border: dashed 4px yellow;
+    border: solid 8px magenta;
 }
