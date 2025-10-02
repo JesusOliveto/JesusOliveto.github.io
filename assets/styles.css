@@ -1,12 +1,12 @@
 /* Estilos principales — identidad basada en #a3223a */
 :root{
-  /* Fondo claro con tinte suave de la marca */
-  --bg: #fff7f9;        /* fondo claro rosado */
+  /* Fondo claro neutro con leve tinte rosado muy sutil */
+  --bg: #a3223a;        /* claro, sin tendencia a morado */
   --card: #ffffff;      /* blanco */
-  --fg: #0f172a;        /* slate-900 */
-  --muted: #475569;     /* slate-600 */
-  --border: #e2e8f0;    /* slate-200 */
-  --accent: #a3223a;    /* color de marca */
+  --fg: #0f172a;        /* texto principal */
+  --muted: #525252;     /* gris neutral-600 */
+  --border: #e5e5e5;    /* gris neutral-200 */
+  --accent: #a3223a;    /* color de marca UBP */
   --accent-ink: #ffffff;
   --chip: #fff1f4;      /* chip con tinte de marca */
   --shadow: 0 10px 20px rgba(2, 6, 23, 0.06);
@@ -14,15 +14,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root{
-    --bg: #0b1220;      /* fondo oscuro */
-    --card: #0f172a;    /* slate-900 */
-    --fg: #e5e7eb;      /* gray-200 */
-    --muted: #cbd5e1;   /* slate-300 */
-    --border: #1f2937;  /* gray-800 */
-    --accent: #a3223a;  /* mantener marca en dark */
+    --bg: #a3223a;      /* oscuro neutro, sin tinte morado/azulado */
+    --card: #171717;    /* neutral-900 */
+    --fg: #e7e7e7;      /* gris claro neutral */
+    --muted: #a3a3a3;   /* neutral-400 */
+    --border: #262626;  /* neutral-800 */
+    --accent: #a3223a;  /* marca UBP */
     --accent-ink: #ffffff;
-    --chip: #111827;    /* gray-900 */
-    --shadow: 0 10px 24px rgba(0,0,0,.35);
+    --chip: #1f1f1f;    /* neutral-900 */
+    --shadow: 0 10px 24px rgba(0,0,0,.5);
   }
 }
 
@@ -31,8 +31,8 @@ html, body { height: 100%; }
 body{
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  /* Fondo con sutil halo de la marca */
-  background: radial-gradient(1200px 600px at 10% -20%, rgba(163,34,58,0.08), transparent 60%), var(--bg);
+  /* Fondo plano para evitar tonos morados/IA; la marca vive en los acentos */
+  background: var(--bg);
   color: var(--fg);
   line-height: 1.5;
 }
