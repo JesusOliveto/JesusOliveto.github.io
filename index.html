@@ -6,6 +6,8 @@
   <title>Jesús Oliveto — CV</title>
   <meta name="description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (50/55) · Tutor universitario — Córdoba, Argentina." />
   <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#a3223a" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
 
   <!-- Open Graph / Twitter (opcional: reemplazar content de og:url si publicás en un dominio propio) -->
   <meta property="og:type" content="website" />
@@ -40,98 +42,8 @@
     ]
   }
   </script>
-
-  <style>
-    :root{
-      --bg: #f8fafc;      /* slate-50 */
-      --card: #ffffff;    /* white */
-      --fg: #0f172a;      /* slate-900 */
-      --muted: #475569;   /* slate-600 */
-      --border: #e2e8f0;  /* slate-200 */
-      --accent: #a3223a;  /* UBP bordó aproximado */
-      --accent-ink: #ffffff;
-      --chip: #f1f5f9;    /* slate-100 */
-      --shadow: 0 10px 20px rgba(2, 6, 23, 0.06);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root{
-        --bg: #0b1220;      /* dark background */
-        --card: #0f172a;    /* slate-900 */
-        --fg: #e5e7eb;      /* gray-200 */
-        --muted: #cbd5e1;   /* slate-300 */
-        --border: #1f2937;  /* gray-800 */
-        --accent: #f43f5e;  /* rose-500 for contrast */
-        --accent-ink: #0b1220;
-        --chip: #111827;    /* gray-900 */
-        --shadow: 0 10px 24px rgba(0,0,0,.35);
-      }
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body{
-      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 10% -20%, rgba(163,34,58,0.08), transparent 60%), var(--bg);
-      color: var(--fg);
-      line-height: 1.5;
-    }
-    .container{
-      max-width: 980px; margin: 0 auto; padding: 28px 20px 80px;
-    }
-    header.card{
-      background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; box-shadow: var(--shadow);
-      display: grid; gap: 10px; align-items: start;
-    }
-    h1{ font-size: clamp(28px, 4vw, 40px); line-height: 1.1; margin: 0; }
-    .tagline{ font-size: 16px; color: var(--muted); }
-    .contact{ display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
-    .contact a{ color: var(--fg); text-decoration: none; border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; background: var(--chip); }
-    .contact a:hover{ outline: 2px solid var(--accent); outline-offset: 2px; }
-    .updated{ font-size: 14px; color: var(--muted); }
-
-    main{ margin-top: 22px; display: grid; gap: 18px; }
-    section.card{ background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; box-shadow: var(--shadow); }
-    section.card h2{ margin: 0 0 10px; font-size: 20px; letter-spacing: .2px; }
-
-    /* Perfil */
-    .perfil p { margin: 0; }
-
-    /* Habilidades */
-    .skills{ display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 16px; }
-    .skills li{ list-style: none; padding-left: 0; }
-    .skills strong{ color: var(--fg); }
-
-    /* Experiencia */
-    .xp-item{ margin-bottom: 12px; }
-    .xp-item h3{ margin: 0; font-size: 18px; }
-    .xp-meta{ color: var(--muted); font-size: 14px; margin: 2px 0 6px; }
-    .bullets{ margin: 0; padding-left: 18px; }
-    .bullets li{ margin: 4px 0; }
-    .chips{ display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-    .chip{ background: var(--chip); border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; font-size: 12px; }
-
-    /* Educación y cursos */
-    .list{ margin: 0; padding-left: 18px; }
-    .list li{ margin: 4px 0; }
-
-    /* Acción */
-    .actions{ position: sticky; bottom: 12px; display: flex; justify-content: flex-end; margin-top: 8px; }
-    .btn{ appearance: none; border: none; background: var(--accent); color: var(--accent-ink); padding: 10px 14px; border-radius: 10px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow); }
-    .btn:focus-visible{ outline: 3px solid color-mix(in oklab, var(--accent), white 35%); outline-offset: 3px; }
-
-    footer{ margin-top: 8px; text-align: center; color: var(--muted); font-size: 13px; }
-
-    /* Imprimir como 1 sola página (según contenido y márgenes del navegador) */
-    @media print {
-      body{ background: white; }
-      .card{ box-shadow: none; }
-      .actions{ display: none; }
-      .container{ padding: 0; }
-      header.card, section.card{ border-color: #ddd; }
-      a[href^="http"]::after, a[href^="mailto"]::after, a[href^="tel"]::after { content: " (" attr(href) ")"; color: #666; font-size: 11px; }
-      /* Evitar cortes feos */
-      .xp-item, header.card, section.card { break-inside: avoid; }
-    }
-  </style>
+  
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <div class="container">
@@ -180,7 +92,7 @@
             <li>Trabajo con equipos académicos para traducir problemas reales en software útil, incorporando IA, automatización y visualización de datos.</li>
             <li>Cobertura del ciclo completo: levantamiento de requerimientos, prototipado, desarrollo, pruebas, documentación, capacitación de usuarios y mejora continua.</li>
           </ul>
-          <h4 style="margin:10px 0 4px;font-size:16px">Principales desarrollos</h4>
+          <h4>Principales desarrollos</h4>
           <ul class="bullets">
             <li><strong>Clasificador de encuestas abiertas (IA):</strong> sistema que clasifica respuestas en dimensiones y aspectos para el Área de Calidad Institucional, mejorando tiempos de análisis y consistencia.</li>
             <li><strong>Buscador de investigaciones (Google Scholar):</strong> herramienta por palabras clave que sintetiza resultados sobre un tema, con enlaces y conteo de citas para priorizar lecturas.</li>
@@ -237,19 +149,16 @@
       </section>
 
       <div class="actions" aria-hidden="false">
-        <button class="btn" onclick="window.print()">Imprimir / Guardar como PDF</button>
+        <button class="btn" data-action="print">Imprimir / Guardar como PDF</button>
       </div>
 
     </main>
 
     <footer>
-      © <span id="year"></span> Jesús Oliveto — Esta página es estática y puede alojarse en GitHub Pages.
+      © <span id="year"></span> Jesús Oliveto.
     </footer>
   </div>
 
-  <script>
-    // Año dinámico en el footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
