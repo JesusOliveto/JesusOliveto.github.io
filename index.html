@@ -4,20 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jesús Oliveto — CV</title>
-  <meta name="description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (50/55) · Tutor universitario — Córdoba, Argentina." />
+  <meta name="description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (53/55) · Tutor universitario — Córdoba, Argentina." />
   <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#a3223a" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+  <!-- Theme color matching the new dynamic brand base -->
+  <meta name="theme-color" content="#fdf2f4" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a060a" media="(prefers-color-scheme: dark)" />
 
-  <!-- Open Graph / Twitter (opcional: reemplazar content de og:url si publicás en un dominio propio) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Jesús Oliveto — CV" />
-  <meta property="og:description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (50/55) · Tutor universitario — Córdoba, Argentina." />
+  <meta property="og:description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (53/55) · Tutor universitario — Córdoba, Argentina." />
   <meta property="og:locale" content="es_AR" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Jesús Oliveto — CV" />
-  <meta name="twitter:description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (50/55) · Tutor universitario — Córdoba, Argentina." />
+  <meta name="twitter:description" content="Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (53/55) · Tutor universitario — Córdoba, Argentina." />
 
   <!-- JSON‑LD Schema.org Person -->
   <script type="application/ld+json">
@@ -47,21 +47,24 @@
 </head>
 <body>
   <div class="container">
-    <header class="card" role="banner">
+    <header class="card" role="banner" data-animate="fade-up">
       <h1>Jesús Oliveto</h1>
       <div class="tagline">Especialista en Desarrollo de Soluciones Tecnológicas · Ingeniería en Informática (53/55) · Tutor universitario</div>
-      <nav class="contact" aria-label="Contacto">
+      
+      <!-- Staggered children animation for contact links -->
+      <nav class="contact stagger-children" aria-label="Contacto">
         <a href="https://maps.google.com/?q=Córdoba, Argentina" target="_blank" rel="noopener" aria-label="Ubicación: Córdoba, Argentina">📍 Córdoba, Argentina</a>
         <a href="tel:+543525436349" aria-label="Teléfono">📞 +54 3525 436349</a>
         <a href="mailto:jesusoliveto@gmail.com" aria-label="Email personal">✉️ jesusoliveto@gmail.com</a>
         <a href="mailto:iolariagaoliveto@ubp.edu.ar" aria-label="Email UBP">🎓 iolariagaoliveto@ubp.edu.ar</a>
       </nav>
+      
       <div class="updated">Actualizado: <time datetime="2026-03-16">16 mar 2026</time></div>
     </header>
 
     <main id="content" role="main">
       <!-- Perfil -->
-      <section class="card perfil" id="perfil">
+      <section class="card perfil" id="perfil" data-animate="fade-up">
         <h2>Perfil</h2>
         <p>
           Profesional en etapa final de Ingeniería en Informática (53/55 materias, promedio 8,14) con foco en construir soluciones de software para investigación, automatización de procesos y análisis de datos. Experiencia en universidades (ámbitos académicos y de vinculación tecnológica), docencia, soporte técnico y desarrollo freelance en videojuegos (Unity). Trabajo cómodo con equipos interdisciplinarios, priorizando claridad técnica, documentación y entregables reproducibles.
@@ -69,9 +72,9 @@
       </section>
 
       <!-- Habilidades -->
-      <section class="card" id="habilidades">
+      <section class="card" id="habilidades" data-animate="fade-up">
         <h2>Habilidades</h2>
-        <ul class="skills">
+        <ul class="skills stagger-children">
           <li><strong>Lenguajes:</strong> Python, C++, C#, Java.</li>
           <li><strong>Datos y backend:</strong> SQL (MySQL, SQL Server), diseño de BD, integraciones REST/SOAP.</li>
           <li><strong>Desarrollo y herramientas:</strong> Unity, Arduino, Git, Linux; experiencia con Streamlit; exposición a Angular/Node.</li>
@@ -82,9 +85,9 @@
 
       <!-- Experiencia principal -->
       <section class="card" id="experiencia">
-        <h2>Experiencia</h2>
+        <h2 data-animate="fade-up">Experiencia</h2>
 
-        <div class="xp-item">
+        <div class="xp-item" data-animate="fade-up">
           <h3>Universidad Blas Pascal (UBP) — Especialista en Desarrollo de Soluciones Tecnológicas para Investigación y Vinculación Tecnológica</h3>
           <div class="xp-meta">02/2024 – Actualidad</div>
           <ul class="bullets">
@@ -102,7 +105,7 @@
           </ul>
         </div>
 
-        <div class="xp-item">
+        <div class="xp-item" data-animate="fade-up">
           <h3>UBP — Docencia (Profesor Tutor)</h3>
           <div class="xp-meta">Sistemas Digitales I (1º semestre 2025) · Programación Genérica y Eventos (2º semestre 2023)</div>
           <ul class="bullets">
@@ -110,7 +113,7 @@
           </ul>
         </div>
 
-        <div class="xp-item">
+        <div class="xp-item" data-animate="fade-up">
           <h3>Freelance — Dev de IA/Gameplay en Unity</h3>
           <div class="xp-meta">02/2022 – 10/2022</div>
           <ul class="bullets">
@@ -119,7 +122,7 @@
           </ul>
         </div>
 
-        <div class="xp-item">
+        <div class="xp-item" data-animate="fade-up">
           <h3>Universidad Blas Pascal — Soporte y Servicio Técnico IT</h3>
           <div class="xp-meta">02/2021 – 04/2022</div>
           <ul class="bullets">
@@ -129,25 +132,25 @@
       </section>
 
       <!-- Educación -->
-      <section class="card" id="educacion">
+      <section class="card" id="educacion" data-animate="fade-up">
         <h2>Educación</h2>
-        <ul class="list">
+        <ul class="list stagger-children">
           <li><strong>Ingeniería en Informática (en curso)</strong> — Universidad Blas Pascal (2019 – ) · 53/55 materias · Promedio: 8,14</li>
           <li><strong>Técnico en Producción Agropecuaria</strong> — Asociación Educativa Pío León (2012 – 2018) · Promedio: 9,02</li>
         </ul>
       </section>
 
       <!-- Cursos y certificaciones -->
-      <section class="card" id="cursos">
+      <section class="card" id="cursos" data-animate="fade-up">
         <h2>Cursos y certificaciones</h2>
-        <ul class="list">
+        <ul class="list stagger-children">
           <li>UTN — Microsoft Word Básico (2017)</li>
           <li>UTN — Microsoft Excel Avanzado (2018)</li>
           <li>UTN — Arduino (2018)</li>
         </ul>
       </section>
 
-      <div class="actions" aria-hidden="false">
+      <div class="actions" data-animate="fade-up">
         <button class="btn" data-action="print">Imprimir / Guardar como PDF</button>
       </div>
 
