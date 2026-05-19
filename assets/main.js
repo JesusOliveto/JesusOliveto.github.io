@@ -21,12 +21,22 @@
    */
   const initPrintAction = () => {
     const printBtn = document.querySelector('[data-action="print"]');
-    if (printBtn) {
-      printBtn.addEventListener('click', () => {
-        // Adding a slight delay to ensure UI threads settle before triggering print modal
-        requestAnimationFrame(() => window.print());
-      });
-    }
+    if (!printBtn) return;
+
+    const originalTitle = document.title;
+    const printableTitle = 'CV - Jesús Oliveto';
+
+    const restoreTitle = () => {
+      document.title = originalTitle;
+    };
+
+    printBtn.addEventListener('click', () => {
+      document.title = printableTitle;
+      // Adding a slight delay to ensure UI threads settle before triggering print modal
+      requestAnimationFrame(() => window.print());
+    });
+
+    window.addEventListener('afterprint', restoreTitle);
   };
 
   /**

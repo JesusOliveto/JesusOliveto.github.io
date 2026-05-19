@@ -184,6 +184,11 @@ header.card {
   transition: all var(--trans-fast);
 }
 
+.contact .icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .contact a:hover, .contact a:focus-visible {
   color: var(--accent);
   border-color: var(--accent);
@@ -336,7 +341,7 @@ main {
 }
 
 .btn::before {
-  content: '🖨️';
+  content: '⬇️';
   font-size: 1.1em;
 }
 
@@ -448,6 +453,10 @@ footer {
     color: #666; 
     font-size: 9pt; 
     font-weight: normal;
+  }
+
+  .contact .icon {
+    display: none;
   }
   
   .xp-item, header.card, section.card { break-inside: avoid; }
