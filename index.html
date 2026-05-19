@@ -53,10 +53,22 @@
       
       <!-- Staggered children animation for contact links -->
       <nav class="contact stagger-children" aria-label="Contacto">
-        <a href="https://maps.google.com/?q=Córdoba, Argentina" target="_blank" rel="noopener" aria-label="Ubicación: Córdoba, Argentina"><span class="icon" aria-hidden="true">📍</span>Córdoba, Argentina</a>
-        <a href="tel:+543525436349" aria-label="Teléfono"><span class="icon" aria-hidden="true">📞</span>+54 3525 436349</a>
-        <a href="mailto:jesusoliveto@gmail.com" aria-label="Email personal"><span class="icon" aria-hidden="true">✉️</span>jesusoliveto@gmail.com</a>
-        <a href="mailto:iolariagaoliveto@ubp.edu.ar" aria-label="Email UBP"><span class="icon" aria-hidden="true">🎓</span>iolariagaoliveto@ubp.edu.ar</a>
+        <a href="https://maps.google.com/?q=Córdoba, Argentina" target="_blank" rel="noopener" aria-label="Ubicación: Córdoba, Argentina">
+          <span class="label">Ubicación:</span>
+          <span class="value">Córdoba, Argentina</span>
+        </a>
+        <a href="tel:+543525436349" aria-label="Teléfono">
+          <span class="label">Teléfono:</span>
+          <span class="value">+54 3525 436349</span>
+        </a>
+        <a href="mailto:jesusoliveto@gmail.com" aria-label="Email personal">
+          <span class="label">Email:</span>
+          <span class="value">jesusoliveto@gmail.com</span>
+        </a>
+        <a href="mailto:iolariagaoliveto@ubp.edu.ar" aria-label="Email UBP">
+          <span class="label">Email UBP:</span>
+          <span class="value">iolariagaoliveto@ubp.edu.ar</span>
+        </a>
       </nav>
       
       <div class="updated">Actualizado: <time datetime="2026-05-19">19 mayo 2026</time></div>
@@ -65,15 +77,17 @@
     <main id="content" role="main">
       <!-- Perfil -->
       <section class="card perfil" id="perfil" data-animate="fade-up">
-        <h2>Perfil</h2>
-        <p>
-          Profesional en etapa final de Ingeniería en Informática (53/55 materias, promedio 8,14) con foco en construir soluciones de software para investigación, automatización de procesos y análisis de datos. Experiencia en universidades (ámbitos académicos y de vinculación tecnológica), docencia, soporte técnico y desarrollo freelance en videojuegos (Unity). Trabajo cómodo con equipos interdisciplinarios, priorizando claridad técnica, documentación y entregables reproducibles.
-        </p>
+        <h2>Resumen profesional</h2>
+        <ul class="bullets">
+          <li>Profesional en etapa final de Ingeniería en Informática (53/55 materias, promedio 8,14), con foco en soluciones de software para investigación, automatización de procesos y análisis de datos.</li>
+          <li>Experiencia en universidades (ámbitos académicos y de vinculación tecnológica), docencia, soporte técnico y desarrollo freelance en videojuegos (Unity).</li>
+          <li>Trabajo cómodo con equipos interdisciplinarios, priorizando claridad técnica, documentación y entregables reproducibles.</li>
+        </ul>
       </section>
 
       <!-- Habilidades -->
       <section class="card" id="habilidades" data-animate="fade-up">
-        <h2>Habilidades</h2>
+        <h2>Habilidades técnicas</h2>
         <ul class="skills stagger-children">
           <li><strong>Lenguajes:</strong> Python, C++, C#, Java.</li>
           <li><strong>Datos y backend:</strong> SQL (MySQL, SQL Server), diseño de BD, integraciones REST/SOAP.</li>
@@ -83,30 +97,35 @@
         </ul>
       </section>
 
+      <section class="card" id="palabras-clave" data-animate="fade-up">
+        <h2>Palabras clave</h2>
+        <p class="keywords">Python · C++ · C# · Java · SQL · MySQL · SQL Server · REST · SOAP · Unity · Arduino · Git · Linux · Streamlit · Angular · Node.js · POO · algoritmos · arquitectura de software · IA · automatización · visualización de datos</p>
+      </section>
+
       <!-- Experiencia principal -->
       <section class="card" id="experiencia">
-        <h2 data-animate="fade-up">Experiencia</h2>
+        <h2 data-animate="fade-up">Experiencia profesional</h2>
 
         <div class="xp-item" data-animate="fade-up">
           <h3>Universidad Blas Pascal (UBP) — Especialista en Desarrollo de Soluciones Tecnológicas para Investigación y Vinculación Tecnológica</h3>
-          <div class="xp-meta">02/2024 – Actualidad</div>
+          <div class="xp-meta">02/2024 – Actualidad · Córdoba, Argentina</div>
           <ul class="bullets">
-            <li>Desde el área de Investigación y Vinculación Tecnológica, diseño, desarrollo y mantengo aplicaciones in house que resuelven necesidades concretas de investigadores y áreas tecnológicas.</li>
-            <li>Trabajo con equipos académicos para traducir problemas reales en software útil, incorporando IA, automatización y visualización de datos.</li>
-            <li>Cobertura del ciclo completo: levantamiento de requerimientos, prototipado, desarrollo, pruebas, documentación, capacitación de usuarios y mejora continua.</li>
+            <li>Diseño, desarrollo y mantenimiento de aplicaciones in-house para investigadores y áreas tecnológicas (IA, automatización, visualización de datos).</li>
+            <li>Levantamiento de requerimientos, prototipado, desarrollo, pruebas, documentación y capacitación de usuarios.</li>
+            <li>Integración de datos y servicios externos (por ejemplo, Google Scholar, Excel y APIs internas).</li>
           </ul>
-          <h4>Principales desarrollos</h4>
+          <h4>Proyectos destacados</h4>
           <ul class="bullets">
-            <li><strong>Clasificador de encuestas abiertas (IA):</strong> sistema que clasifica respuestas en dimensiones y aspectos para el Área de Calidad Institucional, mejorando tiempos de análisis y consistencia.</li>
-            <li><strong>Buscador de investigaciones (Google Scholar):</strong> herramienta por palabras clave que sintetiza resultados sobre un tema, con enlaces y conteo de citas para priorizar lecturas.</li>
-            <li><strong>Generador de gráficos dinámicos animados:</strong> servicio que produce videos o GIF de gráficos estadísticos a partir de datos en Excel, útil para informes y difusión.</li>
-            <li><strong>Sitios web de comunicación de investigaciones:</strong> portales a demanda para publicar resultados, datasets y novedades de proyectos.</li>
-            <li><strong>Calendario regional de eventos:</strong> plataforma que lista eventos próximos y permite carga/edición desde el sitio o importación masiva desde Excel, facilitando la actualización y la difusión.</li>
+            <li><strong>Clasificador de encuestas abiertas (IA):</strong> clasificación automática por dimensiones y aspectos para el Área de Calidad Institucional.</li>
+            <li><strong>Buscador de investigaciones (Google Scholar):</strong> síntesis de resultados por palabras clave con enlaces y conteo de citas.</li>
+            <li><strong>Generador de gráficos dinámicos animados:</strong> videos/GIF de gráficos estadísticos a partir de Excel.</li>
+            <li><strong>Sitios web de comunicación de investigaciones:</strong> portales para publicar resultados, datasets y novedades.</li>
+            <li><strong>Calendario provincial de Turismo de Reuniones y otros Eventos:</strong> carga/edición web e importación masiva desde Excel. <a href="https://observatorioturismo.ubp.edu.ar/" target="_blank" rel="noopener">https://observatorioturismo.ubp.edu.ar/</a></li>
           </ul>
         </div>
 
         <div class="xp-item" data-animate="fade-up">
-          <h3>UBP — Docencia (Profesor Tutor)</h3>
+          <h3>Universidad Blas Pascal (UBP) — Docencia (Profesor Tutor)</h3>
           <div class="xp-meta">Sistemas Digitales I (1º semestre 2025) · Programación Genérica y Eventos (2º semestre 2023)</div>
           <ul class="bullets">
             <li>Acompañamiento en prácticas, correcciones y orientación técnica; coordinación de consignas y criterios de evaluación.</li>

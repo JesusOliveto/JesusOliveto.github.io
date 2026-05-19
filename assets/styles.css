@@ -184,9 +184,12 @@ header.card {
   transition: all var(--trans-fast);
 }
 
-.contact .icon {
-  font-size: 1rem;
-  line-height: 1;
+.contact .label {
+  font-weight: 600;
+}
+
+.contact .value {
+  font-weight: 500;
 }
 
 .contact a:hover, .contact a:focus-visible {
@@ -202,6 +205,11 @@ header.card {
   font-size: 0.85rem;
   color: var(--fg-muted);
   opacity: 0.8;
+}
+
+.keywords {
+  color: var(--fg-muted);
+  line-height: 1.6;
 }
 
 main {
@@ -455,8 +463,8 @@ footer {
     font-weight: normal;
   }
 
-  .contact .icon {
-    display: none;
+  .contact .label {
+    font-weight: 700;
   }
   
   .xp-item, header.card, section.card { break-inside: avoid; }
